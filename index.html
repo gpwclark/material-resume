@@ -15,12 +15,12 @@
 
 </head><body ng-app="Resume" ng-cloak="">
     <resume>
-	<resume-heading first-name="Price" last-name="Clark spellcheck?" github="gpwclark" email="gpwclark@gmail.com" phone="864-561-6391">
+	<resume-heading first-name="Price" last-name="Clark" github="gpwclark" email="gpwclark@gmail.com" phone="864-561-6391">
         </resume-heading>
         <resume-body>
             <resume-column flex="20">
                 <sidebar-category name="Education">
-                    <p>Univeristy of North Carolina at Chapel Hill</p>
+                    <p>University of North Carolina at Chapel Hill</p>
                     <p>2015</p>
                     <p>Computer Science</p>
                     <p>Economics</p>
@@ -43,7 +43,7 @@
                     <p>Concerts</p>
                     <p>Ultimate Frisbee</p>
                     <p>Disc Golf</p>
-                    <p>Guerilla Disc Golf</p>
+                    <p>Guerrilla Disc Golf</p>
                     <p>Tennis</p>
                     <p>Crafting</p>
                 </sidebar-category>
@@ -51,41 +51,33 @@
             <resume-column flex="80">
                 <category name="Professional Experience">
                     <category-item title="Senior Software Engineer" subtitle="Eucleo Software Corporation (Feb 2018 - CURRENT)">
-                        <li>Full-time DARPA's Secure Handhelds on Assured Resilient networks at the tactical Edge (SHARE) program. A Mobile as hoc network (MANET) project utilizing Named-Data Networking (NDN) targeting linux and android platforms.</li>
-                        <li>Gutted TCP/IP networking internals of two android military applications, re-wrote to use decentralized NDN library.</li>
+                        <li>Engineer on DARPA's Secure Handhelds on Assured Resilient networks at the tactical Edge (SHARE) program. A Mobile ad hoc network (MANET) project utilizing Named-Data Networking (NDN) on Linux and custom Android OS.</li>
+                        <li>Gutted TCP/IP networking internals of two Android military applications, re-wrote to use custom NDN based pub/sub library.</li>
                         <li>Wrote, measured, and tested NDN synchronization protocols (e.g. ChronoSync) for use on radio based mesh networks.</li>
-                        <li>Wrote java/python based log aggregation and modeling framework to provide statistics/graphs for clients and debugging; i.e. packet latency, throughput, cache hits, routing efficiency.</li>
+                        <li>Wrote Java/Python based log aggregation and modeling framework to provide statistics/graphs for customers and debugging; e.g. packet latency, mesh neighbors, cache hits, etc.</li>
                     </category-item>
                     <category-item title="Full Stack Engineer" subtitle="GXM Consulting LLC (Feb 2017 - Feb 2018)">
-                        <li>Architected highly configurable CMS like MeteorJS system for the National Security Innovation Network, nsin.us formerly md5.net</li>
-						<!--<li>Worked in agile environment with subcontractors to deliver functionality (sole full-time dev on project)</li>-->
+                        <li>Architected highly configurable CMS like MeteorJS system for the National Security Innovation Network, nsin.us, formerly md5.net</li>
+						<!--<li>Worked in agile environment with subcontractors to deliver functionality (sole full-time dev on project).</li>-->
                         <li>Our social-network-for-innovation software facilitated NSIN hosting multiple in-person hackathons and online idea-submission competitions.</li>
                     </category-item>
-                    <category-item title="Software Contractor" subtitle="PCI Weavers, Inc. (Jan 2016 - Jul 2016 & Jun/July 2020) - Family Business">
-                        <li>(In 2016) Wrote a Java-based e-mail/SMS service to automatically report customer orders to reduce call volume for Funeral Home Gifts product line.</li>
+                    <category-item title="Contractor" subtitle="PCI Weavers, Inc. (Jan 2016 - Jul 2016 & Jun/July 2020) - Family Business">
+                        <li>(In 2016) Wrote a Java-based e-mail/SMS service to automatically report customer orders reducing call volume for Funeral Home Gifts product line.</li>
 						<li>(In 2020) Security consultant on behalf of PCI aided in aftermath of NetWalker ransomware attack. Worked remotely with security contractors and PCI clients to ensure factory operations resumed, employees could safely access intranet, and clients (e.g. Shutterfly) felt safe about their data.</li>
                     </category-item>
-                    <category-item title="Software Development Co-op" subtitle="IBM Software Group (Jan 2014 - Jan 2015)">
-                        <li>Identified repetitive manual tasks performed by team then wrote automation tools, e.g. software builds, translation forms processing, data reporting, and software installs.</li>
-                        <li>Worked directly with the IBM Eclipse SDK maintainer/devs to fix bugs and generate patches for LTS versions of the Eclipse SDK. Maintained IBM Eclipse SDK website.</li>
-						<!--<li>Collaborated with software developers and translators in 23+ countries to help globalize the IBM Collaborative Lifecycle Management/DevOpds/Bluemix software</li>-->
+                    <category-item title="Full Time Software Development Co-op" subtitle="IBM Software Group (Jan 2014 - Jan 2015)">
+                        <li>Identified repetitive manual tasks performed by team then wrote automation tools, e.g. translation forms processing, data reporting, and software installs.</li>
+                        <li>Worked directly with the IBM Eclipse SDK maintainer/devs to fix bugs and generate patches for LTS versions of the Eclipse SDK.</li>
                     </category-item>
                 </category>
                 <category name="Projects">
                     <category-item title="Software Consultant" subtitle="Feedback Labs (feedbacklabs.org, Jul 2019 - CURRENT)">
-                        <li>Fix and maintain broken python application central to Feedback Lab's (FBL) mission; present NGOs/government/non-profits with feedback assessment/analysis to identify how to improve.</li>
-						<!-- <li>Full stack project with typeform/airtable/mailchimp/slack integrations, JS and SQL.</li> -->
+                        <li>Fix then maintain broken python application central to Feedback Lab's (FBL) mission; help NGOs/government/non-profits improve/close their feedback loops.</li>
                     </category-item>
-                    <category-item title="Hobbyist" subtitle="sl-sh - Simple Lisp Based Shell (github.com/sstanfield/slsh Sep 2019 - CURRENT)">
-                        <li>A co-worker wrote a lisp shell in rust. I have been working on the lisp side to help improve the language and shell experience as I love lisp and was trying to transition from zsh to a clojure based shell.</li>
-                        <li>Added support for bash completions, allow use of infix notation for pipe/other chained operators on the REPL, parsing documentation to run tests and automatically generate web based documentation for project.</li>
+                    <category-item title="Hobbyist" subtitle="Simple Lisp Based Shell (github.com/sstanfield/slsh Sep 2019 - CURRENT)">
+                        <li>A co-worker wrote a lisp shell in Rust. I have been working on the lisp side to help improve the language and shell experience.</li>
+                        <li>Added support for bash completions, allow use of infix notation for pipe/other chained operators on the REPL, parsing documentation to run tests, and automatically generate web based documentation for project.</li>
                     </category-item>
-<!--
-                    <category-item title="Turnup" subtitle="github.com/tswizzle/turnup">
-                        <li>A new programming language with a focus on developers turning up</li>
-                        <li>Implemented in Go and requires Docker 1.12 with Ceph on CoreOS</li>
-                    </category-item>
--->
                 </category>
 <!--
                 <category name="Skills">
