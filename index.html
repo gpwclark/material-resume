@@ -1,102 +1,112 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8">
-<title>Resume</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Raleway:500,200,700" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+		<title>Resume</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:500,200,700" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
 
-<link href="https://unpkg.com/material-resume@1.0.1/resume.min.css" rel="stylesheet">
-<script src="https://unpkg.com/material-resume@1.0.1/resume.min.js"></script>
+		<link href="https://unpkg.com/material-resume@1.0.1/resume.min.css" rel="stylesheet">
+		<script src="https://unpkg.com/material-resume@1.0.1/resume.min.js"></script>
 
-</head><body ng-app="Resume" ng-cloak="">
-    <resume>
-	<resume-heading first-name="Price" last-name="Clark" github="gpwclark" email="gpwclark [at] gmail">
-        </resume-heading>
-        <resume-body>
-            <resume-column flex="20">
-                <sidebar-category name="Education">
-                    <p>University of North Carolina at Chapel Hill</p>
-                    <p>2015</p>
-                    <p>Computer Science</p>
-                    <p>Economics</p>
-                    <p>GPA - 3.73, Graduated with Distinction</p>
-                    <p>Phi Beta Kappa</p>
-                </sidebar-category>
-                <sidebar-category name="Hard Skills">
-                    <p>Rust</p>
-                    <p>Java</p>
-                    <p>Docker</p>
-                    <p>Python</p>
-                    <p>GNU/Linux</p>
-                    <p>JavaScript</p>
-                    <p>SQL</p>
-                    <p>Git</p>
-                </sidebar-category>
-                <sidebar-category name="Hobbies">
-                    <p>Cycling Everywhere</p>
-                    <p>Climbing</p>
-                    <p>Tennis</p>
-                    <p>Bikepacking</p>
-                    <p>Concerts</p>
-                    <p>Hiking</p>
-                    <p>Crafting/DIY</p>
-                    <p>Guerrilla Disc Golf</p>
-                </sidebar-category>
-            </resume-column>
-            <resume-column flex="80">
-                <category name="Professional Experience">
-                    <category-item title="Senior Software Engineer" subtitle="Eucleo Software Corporation (Feb 2018 - CURRENT)">
-                        <li>Engineer on DARPA's Secure Handhelds on Assured Resilient networks at the tactical Edge (SHARE) program. A Mobile ad hoc network (MANET) project utilizing Named-Data Networking (NDN) on Linux and custom Android OS.</li>
-                        <li>Gutted TCP/IP networking internals of two Android military applications, re-wrote to use custom NDN based pub/sub library.</li>
-                        <li>Wrote, measured, and tested NDN synchronization protocols (e.g. ChronoSync) for use on radio based mesh networks.</li>
-                        <li>Wrote Java/Python based log aggregation and modeling framework to provide statistics/graphs for customers and debugging; e.g. packet latency, mesh neighbors, cache hits, etc.</li>
-                    </category-item>
-                    <category-item title="Full Stack Engineer" subtitle="GXM Consulting LLC (Feb 2017 - Feb 2018)">
-                        <li>Architected highly configurable CMS like MeteorJS system for the National Security Innovation Network, nsin.us, formerly md5.net</li>
-						<!--<li>Worked in agile environment with subcontractors to deliver functionality (sole full-time dev on project).</li>-->
-                        <li>Our social-network-for-innovation software facilitated NSIN hosting multiple in-person hackathons and online idea-submission competitions.</li>
-                    </category-item>
-                    <category-item title="Contractor" subtitle="PCI Weavers, Inc. (Jan 2016 - Jul 2016 & Jun/July 2020) - Family Business">
-                        <li>(In 2016) Wrote a Java-based e-mail/SMS service to automatically report customer orders reducing call volume for Funeral Home Gifts product line.</li>
-						<li>(In 2020) Security consultant on behalf of PCI aided in aftermath of NetWalker ransomware attack. Worked remotely with security contractors and PCI clients to ensure factory operations resumed, employees could safely access intranet, and clients (e.g. Shutterfly) felt safe about their data.</li>
-                    </category-item>
-                    <category-item title="Full Time Software Development Co-op" subtitle="IBM Software Group (Jan 2014 - Jan 2015)">
-                        <li>Identified repetitive manual tasks performed by team then wrote automation tools, e.g. translation forms processing, data reporting, and software installs.</li>
-                        <li>Worked directly with the IBM Eclipse SDK maintainer/devs to fix bugs and generate patches for LTS versions of the Eclipse SDK.</li>
-                    </category-item>
-                </category>
-                <category name="Projects">
-                    <category-item title="Software Consultant" subtitle="Feedback Labs (feedbacklabs.org, Jul 2019 - CURRENT)">
-                        <li>Fix then maintain broken python application central to Feedback Lab's (FBL) mission; help NGOs/government/non-profits improve/close their feedback loops.</li>
-                    </category-item>
-                    <category-item title="Hobbyist" subtitle="Simple Lisp Based Shell (github.com/sl-sh-dev Sep 2019 - CURRENT)">
-                        <li>A co-worker started writing a lisp-based shell in Rust. For years now we've been working in Rust and our custom Lisp to make our dream shell.</li>
-                        <li>In addition to working on the standard library (https://sl-sh-dev.github.io/sl-sh/mydoc_api.html), a mixture of Rust and Lisp, in the main sl-sh repo, I have siginificant contributions in our Rust based readline and console libraries our shell uses. It's a sizable body of work and we're both very proud!</li>
-                    </category-item>
-                </category>
-<!--
-                <category name="Skills">
-                    <category-item title="Web Development">
-                        <li><strong>Dank Memes</strong> I can find the deepest, dankest memes out there on the inerwebs</li>
-                        <li><strong>Distributed Systems</strong> I only run my apps on Kubernetes and a CoreOS cluster</li>
-                        <li><strong>Tooling</strong> I literally treat Dan Abromov's Twitter as holy gospel</li>
-                        <li><strong>Frameworks</strong> React, Redux, Reselect, Redankmeme, Revenant, Angular</li>
-                    </category-item>
-                    <category-item title="Technologies">
-                        <li><strong>Experienced With</strong> Web &amp; Hybrid App Development \ Functional Programming</li>
-                        <li><strong>Programming</strong> Javascript \ Scala \ Python \ PHP \ C \ Java</li>
-                        <li><strong>Databases</strong> RethinkDB \ MongoDB \ MySQL \ PostgreSQL \ Redis</li>
-                    </category-item>
-                </category>
--->
-            </resume-column>
-        </resume-body>
-    </resume>
+	</head><body ng-app="Resume" ng-cloak="">
+		<resume>
+		<resume-heading first-name="Price" last-name="Clark" github="gpwclark" email="gpwclark [at] gmail">
+		</resume-heading>
+		<resume-body>
+			<resume-column flex="20">
+				<sidebar-category name="Education">
+					<p>+ University of North Carolina at Chapel Hill</p>
+					<p>2015</p>
+					<p>Computer Science</p>
+					<p>Economics</p>
+					<p>GPA - 3.73, Graduated with Distinction</p>
+					<p>Phi Beta Kappa</p>
+				</sidebar-category>
+				<sidebar-category name="Hard Skills">
+					<p>+ Rust</p>
+					<p>+ Java</p>
+					<p>+ Docker</p>
+					<p>+ Python</p>
+					<p>+ GNU/Linux</p>
+					<p>+ JavaScript</p>
+					<p>+ SQL</p>
+					<p>+ Git</p>
+					<p>+ Curating traceability to debug problems</p>
+					<p>+ Cultivating sane workflows</p>
+				</sidebar-category>
+				<sidebar-category name="Hobbies">
+					<p>+ Cycling Everywhere</p>
+					<p>+ Climbing</p>
+					<p>+ Tennis</p>
+					<p>+ Yoga</p>
+					<p>+ Bikepacking</p>
+					<p>+ Concerts</p>
+					<p>+ Hiking</p>
+					<p>+ Crafting/DIY</p>
+				</sidebar-category>
+			</resume-column>
+			<resume-column flex="80">
+				<category name="Professional Experience">
+				<category-item title="Senior Software Engineer" subtitle="Eucleo Software Corporation (Feb 2018 - April 2022)">
+					<li>Engineer on DARPA's Secure Handhelds on Assured Resilient networks at the tactical Edge (SHARE) program. A Mobile ad hoc network (MANET) project utilizing Named-Data Networking (NDN) on Linux and custom Android OS.</li>
+					<li>Gutted TCP/IP networking internals of two Android military applications, re-wrote to use custom NDN based pub/sub library.</li>
+					<li>Wrote, measured, and tested NDN synchronization protocols (e.g. ChronoSync) for use on radio based mesh networks.</li>
+					<li>Wrote Java/Python based log aggregation and modeling framework to provide statistics/graphs for customers and debugging; e.g. packet latency, mesh neighbors, cache hits, etc.</li>
+				</category-item>
+				<category-item title="Senior Software Engineer" subtitle="Eucleo Software Corporation (Feb 2018 - April 2022)">
+					<li>Engineer on DARPA's Secure Handhelds on Assured Resilient networks at the tactical Edge (SHARE) program. A Mobile ad hoc network (MANET) project utilizing Named-Data Networking (NDN) on Linux and custom Android OS.</li>
+					<li>Gutted TCP/IP networking internals of two Android military applications, re-wrote to use custom NDN based pub/sub library.</li>
+					<li>Wrote, measured, and tested NDN synchronization protocols (e.g. ChronoSync) for use on radio based mesh networks.</li>
+					<li>Wrote Java/Python based log aggregation and modeling framework to provide statistics/graphs for customers and debugging; e.g. packet latency, mesh neighbors, cache hits, etc.</li>
+				</category-item>
+				<category-item title="Full Stack Engineer" subtitle="GXM Consulting LLC (Feb 2017 - Feb 2018)">
+					<li>Architected highly configurable CMS like MeteorJS system for the National Security Innovation Network, nsin.us, formerly md5.net</li>
+					<!--<li>Worked in agile environment with subcontractors to deliver functionality (sole full-time dev on project).</li>-->
+					<li>Our social-network-for-innovation software facilitated NSIN hosting multiple in-person hackathons and online idea-submission competitions.</li>
+				</category-item>
+				<category-item title="Contractor" subtitle="PCI Weavers, Inc. (Jan 2016 - Jul 2016 & Jun/July 2020) - Family Business">
+					<li>(In 2016) Wrote a Java-based e-mail/SMS service to automatically report customer orders reducing call volume for Funeral Home Gifts product line.</li>
+					<li>(In 2020) Security consultant on behalf of PCI aided in aftermath of NetWalker ransomware attack. Worked remotely with security contractors and PCI clients to ensure factory operations resumed, employees could safely access intranet, and clients (e.g. Shutterfly) felt safe about their data.</li>
+				</category-item>
+				<category-item title="Full Time Software Development Co-op" subtitle="IBM Software Group (Jan 2014 - Jan 2015)">
+					<li>Identified repetitive manual tasks performed by team then wrote automation tools, e.g. translation forms processing, data reporting, and software installs.</li>
+					<li>Worked directly with the IBM Eclipse SDK maintainer/devs to fix bugs and generate patches for LTS versions of the Eclipse SDK.</li>
+				</category-item>
+				</category>
+				<category name="Projects">
+				<category-item title="Hobbyist" subtitle="Simple Lisp Based Shell (github.com/sl-sh-dev Sep 2019 - CURRENT)">
+					<li>A co-worker started writing a lisp-based shell in Rust. For years now we've been working in Rust and our custom Lisp to make our dream shell.</li>
+					<li>In addition to working on the standard library (https://sl-sh-dev.github.io/sl-sh/mydoc_api.html), a mixture of Rust and Lisp, in the main sl-sh repo, I have siginificant contributions in our Rust based readline and console libraries our shell uses. It's a sizable body of work and we're both very proud!</li>
+				</category-item>
+				</category>
+				<!--
+				<category name="Projects">
+				<category-item title="Software Consultant" subtitle="Feedback Labs (feedbacklabs.org, Jul 2019 - CURRENT)">
+					<li>Fix then maintain broken python application central to Feedback Lab's (FBL) mission; help NGOs/government/non-profits improve/close their feedback loops.</li>
+				</category-item>
+				</category>
+					<category name="Skills">
+					<category-item title="Web Development">
+					<li><strong>Dank Memes</strong> I can find the deepest, dankest memes out there on the inerwebs</li>
+					<li><strong>Distributed Systems</strong> I only run my apps on Kubernetes and a CoreOS cluster</li>
+					<li><strong>Tooling</strong> I literally treat Dan Abromov's Twitter as holy gospel</li>
+					<li><strong>Frameworks</strong> React, Redux, Reselect, Redankmeme, Revenant, Angular</li>
+					</category-item>
+					<category-item title="Technologies">
+					<li><strong>Experienced With</strong> Web &amp; Hybrid App Development \ Functional Programming</li>
+					<li><strong>Programming</strong> Javascript \ Scala \ Python \ PHP \ C \ Java</li>
+					<li><strong>Databases</strong> RethinkDB \ MongoDB \ MySQL \ PostgreSQL \ Redis</li>
+					</category-item>
+					</category>
+				-->
+			</resume-column>
+		</resume-body>
+		</resume>
 
 
-</body></html>
+	</body></html>
